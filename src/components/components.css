@@ -1,0 +1,82 @@
+.cardSkeleton {
+    box-sizing: border-box;
+    background-size: cover;
+    width: 900px;
+    height: 500px;
+    margin-top: 100px;
+    border: 2px solid white;
+    flex-flow: column nowrap;
+    align-items: center;
+    position: relative;
+    overflow: clip;
+}
+
+
+.cardSkeleton:nth-child(odd) {
+    right: 200px;
+}
+.cardSkeleton:nth-child(odd) h3{
+    position: absolute;
+    display:inline;
+    top: 360px;
+    left: 50px;
+    color: white;
+    z-index: 3;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+}
+.cardSkeleton:nth-child(odd) p{
+    position: absolute;
+    display:inline;
+    top: 435px;
+    left: 50px;
+    color: white;
+    z-index: 3;
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0;
+}
+.cardSkeleton:nth-child(even) {
+    left: 200px;
+}
+.cardSkeleton:nth-child(even) h3{
+    position: absolute;
+    display:inline;
+    top: 360px;
+    right: 50px;
+    color: white;
+    z-index: 3;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+}
+.cardSkeleton:nth-child(even) p{
+    position: absolute;
+    display:inline;
+    top: 435px;
+    right: 50px;
+    color: white;
+    z-index: 3;
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0;
+}
+.cardTransition {
+    width: 1000px;
+    height: 600px;
+    content: "";
+    position: absolute;
+    z-index: 2;
+    transition: all .4s;
+    transform: translateX(-1000px);
+}
+.cardSkeleton:nth-child(even) .cardTransition {
+    transform: translateX(1000px);
+}
+.cardSkeleton:nth-child(odd):hover .cardTransition {
+    transform: translateX(0);
+}
+.cardSkeleton:nth-child(even):hover .cardTransition {
+    transform: translateX(0); 
+}
