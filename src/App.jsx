@@ -13,7 +13,7 @@ function App() {
                <div className='buffer'></div>
                <div className='projectsHeading'>PROJECTS</div>
                <div className='projects'>
-                    <ProjectCard cardTitle="CARDTITLE" cardText="CARDTEXT" imgName="escher" colorClass="orange" href="/three.html"/>
+                    <ProjectCard cardTitle="CARDTITLE" cardText="CARDTEXT" imgName="escher" colorClass="orange"/>
                     <ProjectCard cardTitle="CARDTITLE" cardText="CARDTEXT" imgName="griffith" colorClass="blue"/>
                     <ProjectCard cardTitle="CARDTITLE" cardText="CARDTEXT" imgName="bosch" colorClass="purple"/>
                     <ProjectCard cardTitle="CARDTITLE" cardText="CARDTEXT" imgName="bosch" colorClass="orange"/>
